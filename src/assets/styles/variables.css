@@ -1,0 +1,36 @@
+/* Namma Kart - Stormy Morning Color Palette */
+:root {
+  --primary: #6A89A7;
+  --light: #BDDDDC;
+  --accent: #88BDF2;
+  --dark: #384959;
+  --white: #FFFFFF;
+  --gray: #F4F4F4;
+
+  /* Semantic colors */
+  --bg-dark: #2d3a47;
+  --text-on-dark: #FFFFFF;
+  --text-primary: #384959;
+  --text-muted: #6A89A7;
+  --border-color: #BDDDDC;
+  --shadow: 0 2px 12px rgba(56, 73, 89, 0.12);
+  --shadow-hover: 0 8px 24px rgba(56, 73, 89, 0.18);
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+
+  /* Border radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+}

@@ -1,0 +1,117 @@
+@import '../../assets/styles/variables.css';
+
+.admin-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.admin-login__form {
+  background: var(--white);
+  padding: var(--spacing-xl);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  width: 100%;
+  max-width: 400px;
+}
+
+.admin-login__form .form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--spacing-md);
+}
+
+.admin-login__form label {
+  margin-bottom: var(--spacing-xs);
+  font-weight: 500;
+}
+
+.admin-login__form input {
+  padding: var(--spacing-sm);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+}
+
+.admin-login .error {
+  color: var(--danger);
+  margin-bottom: var(--spacing-md);
+}
+
+/* layout */
+.admin-dashboard {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  min-height: 80vh;
+}
+
+.admin-sidebar {
+  background-color: var(--white);
+  border-right: 1px solid var(--border-color);
+  padding: var(--spacing-lg);
+}
+
+.admin-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-sidebar li {
+  margin-bottom: var(--spacing-sm);
+}
+
+.admin-sidebar li a {
+  text-decoration: none;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.admin-sidebar li a.active {
+  color: var(--primary);
+}
+
+.admin-topbar {
+  background-color: var(--white);
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-content {
+  padding: var(--spacing-lg);
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-table th,
+.product-table td {
+  border: 1px solid var(--border-color);
+  padding: var(--spacing-sm);
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--spacing-md);
+}
+
+.form-row label {
+  margin-bottom: var(--spacing-xs);
+}
+
+.form-row input,
+.form-row textarea {
+  padding: var(--spacing-sm);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+}
+
+button.delete {
+  background: var(--danger);
+  color: var(--white);
+}

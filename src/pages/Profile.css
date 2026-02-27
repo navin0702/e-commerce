@@ -1,0 +1,131 @@
+@import '../assets/styles/variables.css';
+
+.profile-page {
+  padding: var(--spacing-xl) 0;
+  min-height: 60vh;
+}
+
+.profile-page__dashboard {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+}
+
+.profile-page__sidebar {
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-lg);
+}
+
+.profile-page__sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-page__sidebar li {
+  padding: var(--spacing-sm) 0;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--text-primary);
+  transition: color var(--transition-fast);
+}
+
+.profile-page__sidebar li:hover,
+.profile-page__sidebar li.active {
+  color: var(--primary);
+}
+
+.profile-page__sidebar li.logout {
+  margin-top: var(--spacing-lg);
+  color: var(--danger);
+}
+
+.profile-page__content {
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-lg);
+}
+
+.profile-section {
+  max-width: 800px;
+}
+
+.profile-section__avatar {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.avatar-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-section__form .form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--spacing-md);
+}
+
+.profile-section__form label {
+  margin-bottom: var(--spacing-xs);
+  font-weight: 500;
+}
+
+.profile-section__form input,
+.profile-section__form select {
+  padding: var(--spacing-sm);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+}
+
+.btn.danger {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.address-list li button {
+  margin-left: var(--spacing-xs);
+}
+
+.orders-table,
+.address-list,
+.wishlist-list,
+.payment-list {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: var(--spacing-md);
+}
+
+.orders-table th,
+.orders-table td {
+  border: 1px solid var(--border-color);
+  padding: var(--spacing-sm);
+  text-align: left;
+}
+
+.address-list li,
+.wishlist-list li,
+.payment-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.wallet-info p {
+  margin: var(--spacing-xs) 0;
+}
+
+@media (min-width: 768px) {
+  .profile-page__dashboard {
+    grid-template-columns: 240px 1fr;
+  }
+}

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -77,3 +78,6 @@ src/
 - Tokens stored in `localStorage` and added to requests on the client.
 - Use strong secrets for `JWT_SECRET` and secure your MongoDB.
 
+=======
+# e-commerce
+>>>>>>> 0f1a6745e16997d3a4c2aa0a3eaf9ff7f0090271
